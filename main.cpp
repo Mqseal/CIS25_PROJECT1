@@ -19,8 +19,6 @@ int main()
     cout << "Enter order (1, 2, or 3): ";
     cin >> order;
 
-    cout << "Enter number of words to generate: ";
-    cin >> numWords;
 
     return 0;
 }
