@@ -5,6 +5,13 @@
 
 using namespace std;
 
+const int MAX_WORDS = 100000;
+const int MAX_CHAIN = 100000;
+
+string words[MAX_WORDS];
+string prefixes[MAX_CHAIN];
+string suffixes[MAX_CHAIN];
+
 int main()
 {
     srand(time(0));
@@ -27,13 +34,6 @@ int main()
         cout << "Invalid order. Use 1, 2, or 3." << endl;
         return 1;
     }
-
-    const int MAX_WORDS = 100000;
-    const int MAX_CHAIN = 100000;
-
-    string words[MAX_WORDS];
-    string prefixes[MAX_CHAIN];
-    string suffixes[MAX_CHAIN];
 
     int wordCount = readWordsFromFile(filename, words, MAX_WORDS);
 
