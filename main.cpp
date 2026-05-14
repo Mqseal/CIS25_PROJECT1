@@ -5,8 +5,8 @@
 
 using namespace std;
 
-const int MAX_WORDS = 100000;
-const int MAX_CHAIN = 100000;
+const int MAX_WORDS = 10000;
+const int MAX_CHAIN = 10000;
 
 string words[MAX_WORDS];
 string prefixes[MAX_CHAIN];
